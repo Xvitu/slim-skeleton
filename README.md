@@ -1,1 +1,3 @@
-Slim base project
+# slim-skeleton
+
+Doing

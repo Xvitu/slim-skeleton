@@ -1,0 +1,37 @@
+{
+    "name": "Xvitu/slim-skeleton",
+    "description": "A basic Slim implementation",
+    "keywords": ["microframework", "rest", "router", "psr7"],
+    "license": "MIT",
+    "require": {
+        "slim/slim": "3.*",
+        "php": ">=7.1.0",
+        "monolog/monolog": "^1.17",
+        "symfony/dependency-injection": "^4.2",
+        "doctrine/orm": "*",
+        "vlucas/phpdotenv": "^2.5",
+        "doctrine/migrations": "^1.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8 < 6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Configs\\": "configs/",
+            "DataBase\\": "database/"        
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout" : 0
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "test": "phpunit"
+    }
+}
